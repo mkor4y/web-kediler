@@ -1,0 +1,60 @@
+{
+  "name": "web-kediler",
+  "version": "0.1.0",
+  "description": "Sitenizin altında yaşayan, kodla çizilmiş anime kediler. Animated anime cats that live at the bottom of any web page.",
+  "license": "MIT",
+  "author": "mkor4y",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkor4y/web-kediler.git"
+  },
+  "keywords": [
+    "cat",
+    "kedi",
+    "three.js",
+    "anime",
+    "web pet",
+    "desktop pet",
+    "neko"
+  ],
+  "main": "dist/web-kediler.mjs",
+  "module": "dist/web-kediler.mjs",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/web-kediler.mjs"
+    },
+    "./auto": "./dist/web-kediler.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./dist/web-kediler.js",
+    "./src/auto.ts"
+  ],
+  "scripts": {
+    "dev": "vite --open /demo/",
+    "build": "rm -rf dist && tsc -p . && vite build && vite build --config vite.esm.config.ts",
+    "check": "tsc -p . --noEmit --emitDeclarationOnly false"
+  },
+  "peerDependencies": {
+    "three": ">=0.160.0"
+  },
+  "peerDependenciesMeta": {
+    "three": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "three": "^0.186.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}
