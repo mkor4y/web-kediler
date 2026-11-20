@@ -54,7 +54,7 @@
 
   <section class="card">
     <h2>Sitene ekle (tek satır)</h2>
-    <pre id="snippet">&lt;script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@main/dist/web-kediler.js" data-cats="orange,black"&gt;&lt;/script&gt;</pre>
+    <pre id="snippet">&lt;script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@v0.1.0/dist/web-kediler.js" data-cats="orange,black"&gt;&lt;/script&gt;</pre>
     <button class="copy" id="copy">Kopyala</button>
   </section>
 
@@ -80,7 +80,7 @@
     k.destroy();
     k = W.start({ cats: colors.length ? colors : ["orange"], followCursor: follow });
     window.kediler = k;
-    const s = `<script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@main/dist/web-kediler.js" data-cats="${colors.join(",") || "orange"}"${follow ? "" : ' data-follow="false"'}><\/script>`;
+    const s = `<script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@v0.1.0/dist/web-kediler.js" data-cats="${colors.join(",") || "orange"}"${follow ? "" : ' data-follow="false"'}><\/script>`;
     document.getElementById("snippet").textContent = s;
   };
   document.getElementById("yarn").onclick = () => k.yarn();

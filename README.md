@@ -17,10 +17,10 @@ Renkler: `orange` (turuncu tekir), `black` (siyah), `white` (beyaz), `gray` (gri
 ## Sitene ekle: tek satır
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@main/dist/web-kediler.js" data-cats="orange,black"></script>
+<script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@v0.1.0/dist/web-kediler.js" data-cats="orange,black"></script>
 ```
 
-`</body>` öncesine koymanız yeter. Ayarlar (hepsi isteğe bağlı):
+`</body>` öncesine koymanız yeter. Bağlantıdaki `@v0.1.0` sürümü sabitler: sonraki değişiklikler sitenizi bozmaz. Her zaman en yenisini isterseniz `@main` yazın. Ayarlar (hepsi isteğe bağlı):
 
 | Öznitelik | Örnek | Anlamı |
 | --- | --- | --- |
@@ -99,8 +99,10 @@ Procedurally drawn anime cats for any web page. There are no model files and no 
 **Add with one line:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@main/dist/web-kediler.js" data-cats="orange,black"></script>
+<script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@v0.1.0/dist/web-kediler.js" data-cats="orange,black"></script>
 ```
+
+`@v0.1.0` pins the version, so later changes won't break your site. Use `@main` to always get the latest.
 
 **Options:**
 

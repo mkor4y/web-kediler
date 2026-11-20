@@ -1,6 +1,6 @@
 /**
  * Tek satırla ekleme:
- *   <script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@main/dist/web-kediler.js" data-cats="orange,black"></script>
+ *   <script src="https://cdn.jsdelivr.net/gh/mkor4y/web-kediler@v0.1.0/dist/web-kediler.js" data-cats="orange,black"></script>
  *
  * Ayarlar (hepsi isteğe bağlı): data-cats="orange,black,white,gray", data-size="100" (piksel),
  * data-follow="false" (imleci izlemesinler), data-floor="0" (altta sabit çubuk varsa yüksekliği),
